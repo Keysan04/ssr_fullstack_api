@@ -1,4 +1,6 @@
+import "dotenv/config";
 import express from "express";
+
 const app = express();
 console.log(app.listen);
 const PORT = 8000;
@@ -7,6 +9,7 @@ import { connectDB } from "./src/config/dbConfig.js";
 import cors from "cors";
 import morgan from "morgan";
 // DB connect
+
 connectDB();
 
 // setup static content serve
